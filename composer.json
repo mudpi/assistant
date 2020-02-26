@@ -1,0 +1,44 @@
+{
+    "name": "mudpi/mudpi-assistant",
+    "description": "MudPi setup application for first time configurations such as connecting to wifi.",
+    "version": "0.1.0",
+    "type": "library",
+    "keywords": ["mudpi", "assistant", "setup", "php", "raspberry pi", "wifi"],
+    "homepage": "https://mudpi.app",
+    "time": "2020-01-01",
+    "authors": [
+        {
+            "name": "Eric Davisson",
+            "email": "eric@mudpi.app",
+            "homepage": "http://ericdavisson.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "info@mudpi.app",
+        "issues": "https://github.com/mudpi/mudpi-assistant/issues",
+        "source": "https://github.com/mudpi/mudpi-assistant",
+        "docs": "https://mudpi.app/docs"
+    },
+    "require": {
+        "php": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mudpi\\": "app/",
+            "Mudpi\\Tools\\": "app/tools/",
+            "Mudpi\\Ajax\\": "app/ajax/"
+        },
+        "files": ["includes/helpers.php", "includes/config.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mudpi\\Tests\\": "test/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
